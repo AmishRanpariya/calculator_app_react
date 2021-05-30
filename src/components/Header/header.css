@@ -1,0 +1,66 @@
+.header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.toggle__div {
+	display: flex;
+	align-items: flex-end;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+.toggle__label {
+	font-size: 12px;
+	margin-bottom: 0.6em;
+	margin-right: 0.5em;
+}
+.toggle * {
+	display: inline-block;
+}
+
+.toggle {
+	position: relative;
+	display: inline-block;
+	font-size: 16px !important;
+	margin: 0.9rem 0.2rem;
+	width: max-content;
+}
+.toggle::after {
+	content: "";
+	position: absolute;
+	background-color: var(--keypad-background);
+	height: 1.4em;
+	left: 0.25em;
+	right: -0.25em;
+	border-radius: 1000px;
+	bottom: -1.5em;
+	transform: translate(-0.25em);
+}
+.toggle .option {
+	position: relative;
+	font-size: 16px !important;
+	margin: 0.2em 0.5em;
+	text-align: center;
+}
+
+.toggle .option::after {
+	z-index: 5;
+	content: "";
+	font-size: 16px !important;
+	position: absolute;
+	bottom: -1.5em;
+	transform: translate(-0.15em);
+	left: 0;
+	right: 0;
+	height: 1em;
+	width: 1em;
+	border-radius: 100%;
+}
+
+.toggle .option.active::after {
+	background-color: var(--key-background-and-toggle);
+}
