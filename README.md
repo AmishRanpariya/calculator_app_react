@@ -26,12 +26,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+<a href="https://calculator-amish.netlify.app/" target="_blank">
+  <img width="30%" src="./screenshot.png">
+  <img width="30%" src="./screenshot2.png">
+  <img width="30%" src="./screenshot3.png">
+</a>
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/AmishRanpariya/calculator_app_react)
-- Live Site URL: [Add live site URL here](https://amishranpariya.github.io/calculator_app_react/)
+- Live Site URL: [Add live site URL here](https://calculator-amish.netlify.app/)
 
 ### Built with
 
