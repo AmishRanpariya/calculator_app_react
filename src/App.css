@@ -68,7 +68,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	background-color: var(--main-background);
+	min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	display: flex;
@@ -84,6 +85,7 @@ body {
 	height: 100%;
 	background-color: var(--main-background);
 	color: var(--text-body);
+	margin-bottom: 0.5rem;
 }
 
 .App {
