@@ -35,13 +35,7 @@ export default class Calc {
 			//if already '.' exist then don't append it.
 			return;
 		}
-		if (
-			this.currentOperand.includes(".") &&
-			this.currentOperand.length - this.currentOperand.indexOf(".") >
-				this.precision
-		) {
-			return;
-		}
+
 		//else append to currentoperand
 		this.currentOperand = this.currentOperand.toString() + number.toString();
 	}
@@ -82,6 +76,9 @@ export default class Calc {
 			case "-":
 				computation = prev - current;
 				break;
+			case "*":
+				computation = prev * current;
+				break;
 			case "x":
 				computation = prev * current;
 				break;
@@ -91,12 +88,20 @@ export default class Calc {
 			default:
 				return;
 		}
-		this.currentOperand = computation.toPrecision(this.precision);
+		if (isNaN(computation)) {
+			this.currentOperand = "undefined";
+		} else {
+			this.currentOperand = computation.toPrecision(this.precision);
+		}
 		this.operation = undefined;
 		this.previousOperand = "";
 	}
 
 	getDisplayNumber(number) {
+		if (number === "undefined") {
+			this.clear();
+			return number;
+		}
 		//for formatting the number.
 		const stringNumber = number.toString();
 

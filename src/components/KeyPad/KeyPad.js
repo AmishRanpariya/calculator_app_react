@@ -51,6 +51,22 @@ const KeyPad = () => {
 			calculator.updateDisplay();
 		});
 
+		window.addEventListener("keydown", (e) => {
+			e.preventDefault();
+			if (e.key.match(/[0-9.]{1}/)) {
+				calculator.appendNumber(e.key);
+			} else if (e.key.match(/[-*/+]{1}/)) {
+				calculator.chooseOperation(e.key);
+			} else if (e.key === "Enter") {
+				calculator.compute();
+			} else if (e.key === "Delete") {
+				calculator.clear();
+			} else if (e.key === "Backspace") {
+				calculator.delete();
+			}
+			calculator.updateDisplay();
+		});
+
 		//to copy result on clipboard by clicking output div
 		const output = document.querySelector(".output");
 		output.addEventListener("click", () => {

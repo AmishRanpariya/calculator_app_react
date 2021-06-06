@@ -22,20 +22,19 @@ Users should be able to:
 - See the size of the elements adjust based on their device's screen size
 - Perform mathmatical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
-- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 ### Screenshot
 
 <a href="https://calculator-amish.netlify.app/" target="_blank">
-  <img width="30%" src="./screenshot.png">
-  <img width="30%" src="./screenshot2.png">
-  <img width="30%" src="./screenshot3.png">
+  <img width="350px" src="./screenshot.png">
+  <img width="350px" src="./screenshot2.png">
+  <img width="350px" src="./screenshot3.png">
 </a>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AmishRanpariya/calculator_app_react)
-- Live Site URL: [Add live site URL here](https://calculator-amish.netlify.app/)
+- Solution URL : [https://github.com/AmishRanpariya/calculator_app_react](https://github.com/AmishRanpariya/calculator_app_react)
+- Live Site URL : [https://calculator-amish.netlify.app/](https://calculator-amish.netlify.app/)
 
 ### Built with
 
